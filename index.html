@@ -121,7 +121,7 @@ $(document).ready(function(){
             </a>
           </li>
         </li>
-        <button class="btn btn-lg btn-primary float-right"  data-toggle="modal" data-target="#contactForm">Say Hi</button>
+        <button class="btn btn-lg btn-primary float-right bg-primary"  data-toggle="modal" data-target="#contactForm">Say Hi</button>
       </li>
         </ul>
       </div>
@@ -134,7 +134,7 @@ $(document).ready(function(){
         <p class="mb-5">When I am not studying, working or changing nappies I love to work on projects. The following is a description of some of them.</p>
 
         <div class="resume-item row " style="margin-top: 120px;">
-          <div class="col-sm-8  d-flex flex-md-row">
+          <div class="col-sm-8  d-flex flex-md-row pb-4">
             <div class="resume-content mr-auto">
               <h3 class="mb-0">UNI TIMETABLE EXPORTER</h3>
               <div class="subheading mb-8">Subtitle </div>
@@ -150,13 +150,13 @@ $(document).ready(function(){
               <span class="badge badge-secondary">Heroku</span>
             </div>
           </div>
-          <div class="col-sm-4">
+          <div class="col-lg-4">
             <img src="img/exporter.jpg" class="rounded float-right w-100" alt="...">
           </div>
         </div>
 
         <div class="resume-item row " style="margin-top: 120px;margin-bottom: 120px;">
-          <div class="col-sm-8  d-flex flex-md-row">
+          <div class="col-sm-8  d-flex flex-md-row pb-4">
             <div class="resume-content mr-auto">
               <h3 class="mb-0">Raspberry Pi Robot</h3>
               <div class="subheading mb-8">Subtitle </div>
@@ -176,7 +176,7 @@ $(document).ready(function(){
         </div>
 
         <div class="resume-item row " style="margin-top: 120px;margin-bottom: 120px;">
-          <div class="col-sm-8  d-flex flex-md-row">
+          <div class="col-sm-8  d-flex flex-md-row pb-4">
             <div class="resume-content mr-auto">
               <h3 class="mb-0">Aequus Spirit Level iOS App</h3>
               <div class="subheading mb-8">Subtitle </div>
@@ -200,13 +200,47 @@ $(document).ready(function(){
       <div class="my-auto">
         <h2 class="mb-5">Education &amp; Employment</h2>
 
-        <ul class="timeline">
+        <!-- Mobile Version of Timeline-->
+        <ul class="d-block d-md-none">
+
           <li>
-            <div class="timeline-badge success"><i class="fa fa-briefcase"></i></div>
             <div class="timeline-panel">
               <div class="timeline-heading">
                 <h4 class="timeline-title">Highway Group</h4>
                 <h5 class="subheading mb-3">Web Engineer</h5>
+                <p><small class="text-muted"><i class="fa fa-calendar"></i></i> 2017 - Current</small></p>
+              </div>
+              <div class="timeline-body">
+                <p>Higher School Certificate </p>
+                <p>School Certificate </p>
+              </div>
+            </div>
+          </li>
+        </ul>
+        <!-- /Mobile Version of Timeline-->
+
+        <!-- Desktop Version of Timeline-->
+        <ul class="timeline d-none d-md-block">
+          <li class="timeline-inverted">
+            <div class="timeline-badge success "><i class="fa fa-briefcase"></i></div>
+            <div class="timeline-panel">
+              <div class="timeline-heading">
+                <h4 class="timeline-title">Highway Group</h4>
+                <h5 class="subheading mb-3">Web Engineer</h5>
+                <p><small class="text-muted"><i class="fa fa-calendar"></i></i> 2017 - Current</small></p>
+              </div>
+              <div class="timeline-body">
+                <p>Higher School Certificate </p>
+                <p>School Certificate </p>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="timeline-badge success"><i class="fa fa-briefcase"></i></div>
+            <div class="timeline-panel">
+              <div class="timeline-heading">
+                <h4 class="timeline-title">Forefront Productions</h4>
+                <h5 class="subheading mb-3">Production Assistant</h5>
                 <p><small class="text-muted"><i class="fa fa-calendar"></i></i> 2017 - Current</small></p>
               </div>
               <div class="timeline-body">
@@ -237,25 +271,40 @@ $(document).ready(function(){
                 <p><small class="text-muted"><i class="fa fa-calendar"></i> 2014 - 2015</small></p>
               </div>
               <div class="timeline-body">
-                <p>Description</p>
+                <p>While working at Challenge I was part of a small team of IT </p>
               </div>
             </div>
           </li>
 
           <li class="timeline-inverted">
+            <div class="timeline-badge success"><i class="fa fa-briefcase"></i></div>
+            <div class="timeline-panel">
+              <div class="timeline-heading">
+                <h4 class="timeline-title">Studio Two Architecture &amp; Design</h4>
+                <h5 class="subheading mb-3">CAD Technician</h5>
+                <p><small class="text-muted"><i class="fa fa-calendar"></i> 2013 - 2014</small></p>
+              </div>
+              <div class="timeline-body">
+                <p>During my time working at Challenge I was part of a small team of IT </p>
+              </div>
+            </div>
+          </li>
+
+          <li>
             <div class="timeline-badge"><i class="fa fa-graduation-cap" data-toggle="tooltip" data-placement="bottom" title="java"></i></div>
             <div class="timeline-panel">
               <div class="timeline-heading">
                 <h4 class="timeline-title">Carinya Christian School Tamworth</h4>
-                <p><small class="text-muted"><i class="fa fa-calendar"></i></i> 2001 - 2014</small></p>
+                <p><small class="text-muted"><i class="fa fa-calendar"></i></i> 2001 - 2013</small></p>
               </div>
               <div class="timeline-body">
-                <p>Higher School Certificate </p>
-                <p>School Certificate </p>
+                <p><i class="fa fa-trophy text-warning"></i> Higher School Certificate </p>
+              <p><i class="fa fa-trophy text-warning"></i> SchoolCertificate </p>
               </div>
             </div>
           </li>
         </ul>
+        <!-- /Desktop Version of Timeline-->
 
 
       </div>
@@ -264,6 +313,7 @@ $(document).ready(function(){
     <section class="resume-section p-3 p-lg-5 d-flex flex-column" id="skills">
       <div class="my-auto">
         <h2 class="mb-5">Skills</h2>
+        <p>I have worked </p>
         <div class="subheading mb-3">Programming Languages</div>
         <ul class="list-inline list-icons">
           <li class="list-inline-item">
