@@ -30,6 +30,8 @@
   <link href="vendor/devicons/css/devicons.min.css" rel="stylesheet">
   <link href="vendor/simple-line-icons/css/simple-line-icons.css" rel="stylesheet">
 
+  <script src="js/moment.min.js"></script>
+
   <!-- Custom styles for this template -->
   <link href="css/resume.min.css" rel="stylesheet">
   <link href="css/timeline.css" rel="stylesheet">
@@ -48,6 +50,14 @@
 
 
 </head>
+
+<script>
+    function time() {
+
+    }
+</script>
+
+
 
 <script>
 $(document).ready(function(){
@@ -117,7 +127,8 @@ $(document).ready(function(){
         </h1>
         <div class="subheading mb-5">Programmer, Student &amp; Dad
         </div>
-        <p class="mb-5">Description of what I do.</p>
+        <span id="ageField">AGE</span>
+        <p class="mb-5">I am a 22 year old Software Engineering student. I live in Newcastle NSW with my wife and baby. </p>
         <ul class="list-inline clearfix list-social-icons mb-0">
           <li class="list-inline-item">
             <a href="mailto:fake@email.com">
@@ -408,7 +419,8 @@ $(document).ready(function(){
   <div class="row">
     <div class="col-sm-10 my-auto">
       <h2 class="mb-5">Skills</h2>
-      <p>I have worked </p>
+      <p>The following are the languages, frameworks and tools I have worked with both professionally and as a student.</p>
+      <br>
       <div class="subheading mb-3">Programming Languages</div>
       <ul class="list-inline list-icons">
         <li class="list-inline-item">
@@ -526,6 +538,13 @@ $(document).ready(function(){
     </div>
   </div>
 </div>
+
+
+<script>
+// Calculates my age and adds to page
+let string = moment("19951225", "YYYYMMDD").fromNow(true);
+document.getElementById("ageField").innerHTML = string;
+</script>
 
 </body>
 

@@ -29,6 +29,7 @@
         "bootstrap": "4.0.0",
         "devicon": "^2.0.0",
         "font-awesome": "^4.7.0",
+        "moment": "^2.20.1",
         "popper.js": "^1.13.0",
         "simple-line-icons": "^2.4.1"
     },
