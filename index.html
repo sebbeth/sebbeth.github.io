@@ -92,22 +92,22 @@ $(document).ready(function(){
           <a class="nav-link js-scroll-trigger" href="#about">About</a>
         </li>
         <li class="nav-item">
+          <a class="nav-link js-scroll-trigger" href="#skills">Skills</a>
+        </li>
+        <li class="nav-item">
           <a class="nav-link js-scroll-trigger" href="#projects">Projects</a>
         </li>
         <li class="nav-item">
           <a class="nav-link js-scroll-trigger" href="#education">Education &amp; Employment</a>
         </li>
-        <li class="nav-item">
-          <a class="nav-link js-scroll-trigger" href="#skills">Skills</a>
-        </li><!--
           <li class="nav-item">
           <a class="nav-link js-scroll-trigger" href="/blog.html">Blog</a>
-        </li> -->
+        </li>
         <br>
         <br>
         <br>
         <li>
-          <span style="color:#779dcd"><i class="fa fa-copyright"></i> Sebastian Brown 2018</span>
+          <span style="color:#779dcd"><i class="fa fa-copyright"></i> Sebastian Brown <span id="copyrightYear"></span></span>
         </li>
         <br>
         <li>
@@ -127,8 +127,8 @@ $(document).ready(function(){
         </h1>
         <div class="subheading mb-5">Programmer, Student &amp; Dad
         </div>
-        <span id="ageField">AGE</span>
-        <p class="mb-5">I am a 22 year old Software Engineering student. I live in Newcastle NSW with my wife and baby. </p>
+
+        <p class="mb-5">I am a <span id="ageField"></span> year old Software Engineering student. I live in Newcastle NSW with my wife and baby. </p>
         <ul class="list-inline clearfix list-social-icons mb-0">
           <li class="list-inline-item">
             <a href="mailto:fake@email.com">
@@ -154,264 +154,10 @@ $(document).ready(function(){
               </span>
             </a>
           </li>
-        </li>
+        <li>
         <a href="mailto:fake@email.com" class="btn btn-lg btn-primary float-right bg-primary  " style="color:white" >Say Hi</a> <!-- data-toggle="modal" data-target="#contactForm" -->
       </li>
     </ul>
-  </div>
-</section>
-
-<section class="resume-section p-3 p-lg-5 d-flex flex-column" id="projects">
-  <div class="my-auto">
-    <h2 class="mb-5">Projects</h2>
-
-    <div class="row">
-      <div class="col-sm-10">
-        <p class="mb-5">When I am not studying, working or changing nappies I love to work on projects. The following is a description of some of them.</p>
-      </div>
-      <div class="col-auto d-none d-md-block">
-        <!-- Blank space col -->
-      </div>
-    </div>
-    <div class="resume-item row " style="margin-top: 120px;">
-      <div class="col-sm-8  d-flex flex-md-row pb-4">
-        <div class="resume-content mr-auto">
-          <h3 class="mb-0">UNI TIMETABLE EXPORTER</h3>
-          <div class="subheading mb-8">Subtitle </div>
-          <p>Description</p>
-          <a href="http://www.uon-myhub-calendar-exporter.com" class="btn btn-outline-primary" >Website</i></a>
-          <a href="#" class="btn btn-outline-primary" >Read More</i></a>
-          <hr>
-          <span>Technologies used:</span><br>
-          <span class="badge badge-secondary">Materialize</span>
-          <span class="badge badge-secondary">jQuery</span>
-          <span class="badge badge-secondary">Java Servlets</span>
-          <span class="badge badge-secondary">Tomcat</span>
-          <span class="badge badge-secondary">Heroku</span>
-        </div>
-      </div>
-      <div class="col-lg-4">
-        <img src="img/exporter.jpg" class="rounded float-right w-100" alt="...">
-      </div>
-    </div>
-
-    <div class="resume-item row " style="margin-top: 120px;margin-bottom: 120px;">
-      <div class="col-sm-8  d-flex flex-md-row pb-4">
-        <div class="resume-content mr-auto">
-          <h3 class="mb-0">Raspberry Pi Robot</h3>
-          <div class="subheading mb-8">Subtitle </div>
-          <p>I made a robot!I made a robotI made a robotI made a robotI made a robotI made a robot</p>
-          <a href="https://github.com/sebbeth/SB_RasPiRobotics" class="btn btn-outline-primary" >GitHub Repo <i class="fa fa-github" ></i></a>
-          <a href="#" class="btn btn-outline-primary" >Read More</i></a>
-          <hr>
-          <span>Technologies used:</span><br>
-          <span class="badge badge-secondary">pi4j</span>
-          <span class="badge badge-secondary">Java</span>
-          <span class="badge badge-secondary">Debian</span>
-        </div>
-      </div>
-      <div class="col-sm-4">
-        <img src="img/robot.png" class="rounded float-right w-100" alt="...">
-      </div>
-    </div>
-
-    <div class="resume-item row " style="margin-top: 120px;margin-bottom: 120px;">
-      <div class="col-sm-8  d-flex flex-md-row pb-4">
-        <div class="resume-content mr-auto">
-          <h3 class="mb-0">Aequus Spirit Level iOS App</h3>
-          <div class="subheading mb-8">Subtitle </div>
-          <p>Description of D and T project</p>
-          <a href="#" class="btn btn-outline-primary" >Read More</i></a>
-          <hr>
-          <span>Technologies used:</span><br>
-          <span class="badge badge-secondary">Cocoa</span>
-          <span class="badge badge-secondary">Objective C</span>
-        </div>
-      </div>
-      <div class="col-sm-4">
-        <img src="img/aequus.jpg" class="rounded float-right w-100" alt="...">
-      </div>
-    </div>
-  </div>
-
-</section>
-
-<section class="resume-section p-3 p-lg-5 d-flex flex-column" id="education">
-  <div class="my-auto">
-    <h2 class="mb-5">Education &amp; Employment</h2>
-
-    <!-- Mobile Version of Timeline-->
-    <div class="d-block d-md-none">
-
-      <div class="timeline-mobile-card card ">
-        <div class="card-body">
-          <div>
-            <h4>Highway Group</h4>
-            <h5 class="subheading mb-3">Web Engineer</h5>
-            <p><small class="text-muted"><i class="fa fa-calendar"></i></i> 2017 - Current</small></p>
-          </div>
-          <div>
-            <p>Higher School Certificate </p>
-            <p>School Certificate </p>
-          </div>
-        </div>
-      </div>
-      <div class="card">
-        <div class="card-body">
-          <div>
-            <h4>Forefront Productions</h4>
-            <h5 class="subheading mb-3">Production Assistant</h5>
-            <p><small class="text-muted"><i class="fa fa-calendar"></i></i> 2015 - Current</small></p>
-          </div>
-          <div>
-            <p>Higher School Certificate </p>
-            <p>School Certificate </p>
-          </div>
-        </div>
-      </div>
-      <div class="card">
-        <div class="card-body">
-          <div>
-            <h4>University of Newcastle</h4>
-            <h5 class="subheading mb-3">Bachelor of Engineering (Honours) (Software)</h5>
-            <p><small class="text-muted"><i class="fa fa-calendar"></i></i> 2015 - Current</small></p>
-          </div>
-          <div>
-            <p><i class="fa fa-trophy text-warning"></i> Awarded the Engineers Australia First Year Engineering Design Prize - Newcastle Division</p>
-          </div>
-        </div>
-      </div>
-
-
-      <div class="card">
-        <div class="card-body">
-          <div>
-            <h4>Challenge Community Services</h4>
-            <h5 class="subheading mb-3">Technology Support Officer</h5>
-            <p><small class="text-muted"><i class="fa fa-calendar"></i></i> 2014 - 2015</small></p>
-          </div>
-          <div>
-            <p>While working at Challenge I was part of a small team of IT </p>
-          </div>
-        </div>
-      </div>
-      <div class="card">
-        <div class="card-body">
-          <div>
-            <h4>Studio Two Architecture &amp; Design</h4>
-            <h5 class="subheading mb-3">CAD Technician</h5>
-            <p><small class="text-muted"><i class="fa fa-calendar"></i></i> 2013 - 2014</small></p>
-          </div>
-          <div>
-            <p>While working at Challenge I was part of a small team of IT </p>
-          </div>
-        </div>
-      </div>
-
-      <div class="card">
-        <div class="card-body">
-          <div>
-            <h4>Carinya Christian School Tamworth</h4>
-            <h5 class="subheading mb-3">Web Engineer</h5>
-            <p><small class="text-muted"><i class="fa fa-calendar"></i></i> 2001 - 2013</small></p>
-          </div>
-          <div>
-            <p><i class="fa fa-trophy text-warning"></i> Higher School Certificate </p>
-            <p><i class="fa fa-trophy text-warning"></i> SchoolCertificate </p>
-          </div>
-        </div>
-      </div>
-    </div>
-    <!-- /Mobile Version of Timeline-->
-
-    <!-- Desktop Version of Timeline-->
-    <ul class="timeline d-none d-md-block">
-      <li class="timeline-inverted">
-        <div class="timeline-badge"><i class="fa fa-briefcase"></i></div>
-        <div class="timeline-panel">
-          <div class="timeline-heading">
-            <h4 class="timeline-title">Highway Group</h4>
-            <h5 class="subheading mb-3">Web Engineer</h5>
-            <p><small class="text-muted"><i class="fa fa-calendar"></i></i> 2017 - Current</small></p>
-          </div>
-          <div class="timeline-body">
-            <p>Higher School Certificate </p>
-            <p>School Certificate </p>
-          </div>
-        </div>
-      </li>
-      <li>
-        <div class="timeline-badge"><i class="fa fa-briefcase"></i></div>
-        <div class="timeline-panel">
-          <div class="timeline-heading">
-            <h4 class="timeline-title">Forefront Productions</h4>
-            <h5 class="subheading mb-3">Production Assistant</h5>
-            <p><small class="text-muted"><i class="fa fa-calendar"></i></i> 2016 - Current</small></p>
-          </div>
-          <div class="timeline-body">
-            <p>Higher School Certificate </p>
-            <p>School Certificate </p>
-          </div>
-        </div>
-      </li>
-      <li class="timeline-inverted">
-        <div class="timeline-badge success"><i class="fa fa-graduation-cap"></i></div>
-        <div class="timeline-panel">
-          <div class="timeline-heading">
-            <h4 class="timeline-title">University of Newcastle</h4>
-            <h5 class="subheading mb-3">Bachelor of Engineering (Honours) (Software)</h5>
-            <p><small class="text-muted"><i class="fa fa-calendar"></i></i> 2015 - current</small></p>
-          </div>
-          <div class="timeline-body">
-            <p><i class="fa fa-trophy text-warning"></i> Awarded the Engineers Australia First Year Engineering Design Prize - Newcastle Division</p>
-          </div>
-        </div>
-      </li>
-      <li>
-        <div class="timeline-badge"><i class="fa fa-briefcase"></i></div>
-        <div class="timeline-panel">
-          <div class="timeline-heading">
-            <h4 class="timeline-title">Challenge Community Services</h4>
-            <h5 class="subheading mb-3">Technology Support Officer</h5>
-            <p><small class="text-muted"><i class="fa fa-calendar"></i> 2014 - 2015</small></p>
-          </div>
-          <div class="timeline-body">
-            <p>While working at Challenge I was part of a small team of IT </p>
-          </div>
-        </div>
-      </li>
-
-      <li class="timeline-inverted">
-        <div class="timeline-badge"><i class="fa fa-briefcase"></i></div>
-        <div class="timeline-panel">
-          <div class="timeline-heading">
-            <h4 class="timeline-title">Studio Two Architecture &amp; Design</h4>
-            <h5 class="subheading mb-3">CAD Technician</h5>
-            <p><small class="text-muted"><i class="fa fa-calendar"></i> 2013 - 2014</small></p>
-          </div>
-          <div class="timeline-body">
-            <p>During my time working at Challenge I was part of a small team of IT </p>
-          </div>
-        </div>
-      </li>
-
-      <li>
-        <div class="timeline-badge success"><i class="fa fa-graduation-cap" data-toggle="tooltip" data-placement="bottom" title="java"></i></div>
-        <div class="timeline-panel">
-          <div class="timeline-heading">
-            <h4 class="timeline-title">Carinya Christian School Tamworth</h4>
-            <p><small class="text-muted"><i class="fa fa-calendar"></i></i> 2001 - 2013</small></p>
-          </div>
-          <div class="timeline-body">
-            <p><i class="fa fa-trophy text-warning"></i> Higher School Certificate </p>
-            <p><i class="fa fa-trophy text-warning"></i> SchoolCertificate </p>
-          </div>
-        </div>
-      </li>
-    </ul>
-    <!-- /Desktop Version of Timeline-->
-
-
   </div>
 </section>
 
@@ -499,6 +245,261 @@ $(document).ready(function(){
 </section>
 
 
+<section class="resume-section p-3 p-lg-5 d-flex flex-column" id="projects">
+  <div class="my-auto">
+    <h2 class="mb-5">Projects</h2>
+
+    <div class="row">
+      <div class="col-sm-10">
+        <p class="mb-5">When I am not studying, working or changing nappies I love to work on projects. The following is a description of some of them.</p>
+      </div>
+      <div class="col-auto d-none d-md-block">
+        <!-- Blank space col -->
+      </div>
+    </div>
+    <div class="resume-item row " style="margin-top: 120px;">
+      <div class="col-sm-8  d-flex flex-md-row pb-4">
+        <div class="resume-content mr-auto">
+          <h3 class="mb-0">UNI TIMETABLE EXPORTER</h3>
+          <div class="subheading mb-8">Subtitle </div>
+          <p>Description</p>
+          <a href="http://www.uon-myhub-calendar-exporter.com" class="btn btn-outline-primary" >Website</a>
+          <a href="#" class="btn btn-outline-primary" >Read More</a>
+          <hr>
+          <span>Technologies used:</span><br>
+          <span class="badge badge-secondary">Materialize</span>
+          <span class="badge badge-secondary">jQuery</span>
+          <span class="badge badge-secondary">Java Servlets</span>
+          <span class="badge badge-secondary">Tomcat</span>
+          <span class="badge badge-secondary">Heroku</span>
+        </div>
+      </div>
+      <div class="col-lg-4">
+        <img src="img/exporter.jpg" class="rounded float-right w-100" alt="...">
+      </div>
+    </div>
+
+    <div class="resume-item row " style="margin-top: 120px;margin-bottom: 120px;">
+      <div class="col-sm-8  d-flex flex-md-row pb-4">
+        <div class="resume-content mr-auto">
+          <h3 class="mb-0">Raspberry Pi Robot</h3>
+          <div class="subheading mb-8">Subtitle </div>
+          <p>I made a robot!I made a robotI made a robotI made a robotI made a robotI made a robot</p>
+          <a href="https://github.com/sebbeth/SB_RasPiRobotics" class="btn btn-outline-primary" >GitHub Repo <i class="fa fa-github" ></i></a>
+          <a href="#" class="btn btn-outline-primary" >Read More</a>
+          <hr>
+          <span>Technologies used:</span><br>
+          <span class="badge badge-secondary">pi4j</span>
+          <span class="badge badge-secondary">Java</span>
+          <span class="badge badge-secondary">Debian</span>
+        </div>
+      </div>
+      <div class="col-sm-4">
+        <img src="img/robot.png" class="rounded float-right w-100" alt="...">
+      </div>
+    </div>
+
+    <div class="resume-item row " style="margin-top: 120px;margin-bottom: 120px;">
+      <div class="col-sm-8  d-flex flex-md-row pb-4">
+        <div class="resume-content mr-auto">
+          <h3 class="mb-0">Aequus Spirit Level iOS App</h3>
+          <div class="subheading mb-8">Subtitle </div>
+          <p>Description of D and T project</p>
+          <a href="#" class="btn btn-outline-primary" >Read More</a>
+          <hr>
+          <span>Technologies used:</span><br>
+          <span class="badge badge-secondary">Cocoa</span>
+          <span class="badge badge-secondary">Objective C</span>
+        </div>
+      </div>
+      <div class="col-sm-4">
+        <img src="img/aequus.jpg" class="rounded float-right w-100" alt="...">
+      </div>
+    </div>
+  </div>
+
+</section>
+
+<section class="resume-section p-3 p-lg-5 d-flex flex-column" id="education">
+  <div class="my-auto">
+    <h2 class="mb-5">Education &amp; Employment</h2>
+
+    <!-- Mobile Version of Timeline-->
+    <div class="d-block d-md-none">
+
+      <div class="timeline-mobile-card card ">
+        <div class="card-body">
+          <div>
+            <h4>Highway Group</h4>
+            <h5 class="subheading mb-3">Web Engineer</h5>
+            <p><small class="text-muted"><i class="fa fa-calendar"></i> 2017 - Current</small></p>
+          </div>
+          <div>
+            <p>Higher School Certificate </p>
+            <p>School Certificate </p>
+          </div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-body">
+          <div>
+            <h4>Forefront Productions</h4>
+            <h5 class="subheading mb-3">Production Assistant</h5>
+            <p><small class="text-muted"><i class="fa fa-calendar"></i> 2015 - Current</small></p>
+          </div>
+          <div>
+            <p>Higher School Certificate </p>
+            <p>School Certificate </p>
+          </div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-body">
+          <div>
+            <h4>University of Newcastle</h4>
+            <h5 class="subheading mb-3">Bachelor of Engineering (Honours) (Software)</h5>
+            <p><small class="text-muted"><i class="fa fa-calendar"></i> 2015 - Current</small></p>
+          </div>
+          <div>
+            <p><i class="fa fa-trophy text-warning"></i> Awarded the Engineers Australia First Year Engineering Design Prize - Newcastle Division</p>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="card">
+        <div class="card-body">
+          <div>
+            <h4>Challenge Community Services</h4>
+            <h5 class="subheading mb-3">Technology Support Officer</h5>
+            <p><small class="text-muted"><i class="fa fa-calendar"></i> 2014 - 2015</small></p>
+          </div>
+          <div>
+            <p>While working at Challenge I was part of a small team of IT </p>
+          </div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-body">
+          <div>
+            <h4>Studio Two Architecture &amp; Design</h4>
+            <h5 class="subheading mb-3">CAD Technician</h5>
+            <p><small class="text-muted"><i class="fa fa-calendar"></i> 2013 - 2014</small></p>
+          </div>
+          <div>
+            <p>While working at Challenge I was part of a small team of IT </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="card-body">
+          <div>
+            <h4>Carinya Christian School Tamworth</h4>
+            <h5 class="subheading mb-3">Web Engineer</h5>
+            <p><small class="text-muted"><i class="fa fa-calendar"></i> 2001 - 2013</small></p>
+          </div>
+          <div>
+            <p><i class="fa fa-trophy text-warning"></i> Higher School Certificate </p>
+            <p><i class="fa fa-trophy text-warning"></i> SchoolCertificate </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- /Mobile Version of Timeline-->
+
+    <!-- Desktop Version of Timeline-->
+    <ul class="timeline d-none d-md-block">
+      <li class="timeline-inverted">
+        <div class="timeline-badge"><i class="fa fa-briefcase"></i></div>
+        <div class="timeline-panel">
+          <div class="timeline-heading">
+            <h4 class="timeline-title">Highway Group</h4>
+            <h5 class="subheading mb-3">Web Engineer</h5>
+            <p><small class="text-muted"><i class="fa fa-calendar"></i> 2017 - Current</small></p>
+          </div>
+          <div class="timeline-body">
+            <p>Higher School Certificate </p>
+            <p>School Certificate </p>
+          </div>
+        </div>
+      </li>
+      <li>
+        <div class="timeline-badge"><i class="fa fa-briefcase"></i></div>
+        <div class="timeline-panel">
+          <div class="timeline-heading">
+            <h4 class="timeline-title">Forefront Productions</h4>
+            <h5 class="subheading mb-3">Production Assistant</h5>
+            <p><small class="text-muted"><i class="fa fa-calendar"></i> 2016 - Current</small></p>
+          </div>
+          <div class="timeline-body">
+            <p>Higher School Certificate </p>
+            <p>School Certificate </p>
+          </div>
+        </div>
+      </li>
+      <li class="timeline-inverted">
+        <div class="timeline-badge success"><i class="fa fa-graduation-cap"></i></div>
+        <div class="timeline-panel">
+          <div class="timeline-heading">
+            <h4 class="timeline-title">University of Newcastle</h4>
+            <h5 class="subheading mb-3">Bachelor of Engineering (Honours) (Software)</h5>
+            <p><small class="text-muted"><i class="fa fa-calendar"></i> 2015 - current</small></p>
+          </div>
+          <div class="timeline-body">
+            <p><i class="fa fa-trophy text-warning"></i> Awarded the Engineers Australia First Year Engineering Design Prize - Newcastle Division</p>
+          </div>
+        </div>
+      </li>
+      <li>
+        <div class="timeline-badge"><i class="fa fa-briefcase"></i></div>
+        <div class="timeline-panel">
+          <div class="timeline-heading">
+            <h4 class="timeline-title">Challenge Community Services</h4>
+            <h5 class="subheading mb-3">Technology Support Officer</h5>
+            <p><small class="text-muted"><i class="fa fa-calendar"></i> 2014 - 2015</small></p>
+          </div>
+          <div class="timeline-body">
+            <p>While working at Challenge I was part of a small team of IT </p>
+          </div>
+        </div>
+      </li>
+
+      <li class="timeline-inverted">
+        <div class="timeline-badge"><i class="fa fa-briefcase"></i></div>
+        <div class="timeline-panel">
+          <div class="timeline-heading">
+            <h4 class="timeline-title">Studio Two Architecture &amp; Design</h4>
+            <h5 class="subheading mb-3">CAD Technician</h5>
+            <p><small class="text-muted"><i class="fa fa-calendar"></i> 2013 - 2014</small></p>
+          </div>
+          <div class="timeline-body">
+            <p>During my time working at Challenge I was part of a small team of IT </p>
+          </div>
+        </div>
+      </li>
+
+      <li>
+        <div class="timeline-badge success"><i class="fa fa-graduation-cap" data-toggle="tooltip" data-placement="bottom" title="java"></i></div>
+        <div class="timeline-panel">
+          <div class="timeline-heading">
+            <h4 class="timeline-title">Carinya Christian School Tamworth</h4>
+            <p><small class="text-muted"><i class="fa fa-calendar"></i> 2001 - 2013</small></p>
+          </div>
+          <div class="timeline-body">
+            <p><i class="fa fa-trophy text-warning"></i> Higher School Certificate </p>
+            <p><i class="fa fa-trophy text-warning"></i> SchoolCertificate </p>
+          </div>
+        </div>
+      </li>
+    </ul>
+    <!-- /Desktop Version of Timeline-->
+
+
+  </div>
+</section>
+
+
 </div>
 
 
@@ -543,7 +544,12 @@ $(document).ready(function(){
 <script>
 // Calculates my age and adds to page
 let string = moment("19951225", "YYYYMMDD").fromNow(true);
-document.getElementById("ageField").innerHTML = string;
+let age = string.replace("years", "");
+document.getElementById("ageField").innerHTML = age;
+
+// Get the year
+document.getElementById("copyrightYear").innerHTML = moment().year();
+
 </script>
 
 </body>
