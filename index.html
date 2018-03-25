@@ -75,6 +75,33 @@ $(document).ready(function(){
 }
 </style>
 
+
+<style>
+.icon {
+  display: inline-block;
+  width: 0.8em;
+  height: 0.8em;
+  stroke-width: 0;
+  stroke: currentColor;
+  fill: currentColor;
+}
+
+.icon svg:hover {
+color: #0b5dad;
+}
+</style>
+
+<svg aria-hidden="true" style="position: absolute; width: 0; height: 0; overflow: hidden;" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<defs>
+<symbol id="icon-xcode" viewBox="0 0 32 32">
+<title>xcode</title>
+<path fill="#1575f9" style="fill: var(--color1, #868e96)" d="M26.667 6.4c0.533-0.267 0.8-0.533 1.2-0.533 0.667 0 1.067 0.4 1.2 0.667 0.267 0.4 1.2 0.667 1.6 0.667 0.267 0 0.667-0.933 0.933-1.733s0.267-1.733 0.133-1.867c-0.133-0.133-1.2-0.4-1.467-0.4-0.133 0.133-0.4 0.267-0.933 0.267s-1.067-0.4-1.467-0.8c-0.667-0.667-1.467-0.933-2.267-1.2s-1.733-0.267-2.533-0.267c-1.2-0.133-2.533-0.133-3.733 0.267-0.533 0.133-0.933 0.267-1.467 0.533-0.133 0.133-0.533 0.267-0.667 0.267-0.133 0.133-0.133 0.267 0 0.267s0.667-0.133 0.667-0.133-0.667 0.267-0.667 0.533c0 0.133 0.133 0.133 0.133 0.133s0.4-0.133 0.667-0.133c0.533 0 1.333-0.267 2-0.267 0.8 0 1.6 0.267 2.4 1.067 1.2 1.467 1.067 3.333 1.067 3.733-0.267 2.8-6.533 19.867-6.8 21.067s-0.267 1.867 1.2 2.267 2 0 2.267-0.533c0.133-0.933 4.133-22 6.533-23.867z"></path>
+<path fill="#1575f9" style="fill: var(--color1, #868e96)" d="M21.467 5.067l-21.467 3.333 3.467 22.267 11.467-1.867c-0.133-0.933 2.933-8.933 3.467-10.4l-5.867 0.933 0.8-2.4 4.133-0.667 1.067 1.333s0.267-0.667 0.267-0.933l-5.733-7.067c-0.267-0.4-0.267-0.933 0.133-1.2l0.267-0.267c0.4-0.267 0.933-0.267 1.2 0.133l5.067 5.867c1.067-3.2 2-6 2-6.933 0.133-0.267 0.133-1.2-0.267-2.133zM5.467 18.267l3.6-0.667-0.933 2.4-2.4 0.4-0.267-2.133zM13.2 11.467l0.4 0.133c0.533 0.133 0.667 0.667 0.533 1.2l-4 10.667-2.4 3.2 0.267-4 4-10.667c0.133-0.533 0.667-0.667 1.2-0.533zM27.6 7.733c-0.533 0.533-1.2 2.267-2.533 7.333h0.133l0.4 2.133-1.067 0.133c-0.133 0.667-0.267 1.333-0.533 2.133 2.267 1.2 1.067 4.133 0.933 4.133s-0.133 0-0.133-0.133 0.133-0.533-0.267-0.667c-0.267-0.133-0.8-0.267-1.2-0.533-0.4 1.6-0.8 3.467-1.2 5.467l8.4-1.333-2.8-18.8-0.133 0.133z"></path>
+</symbol>
+</defs>
+</svg>
+
+
 <body id="page-top">
 
   <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top" id="sideNav">
@@ -169,7 +196,14 @@ $(document).ready(function(){
 <section class="resume-section p-3 p-lg-5 d-flex flex-column" id="skills">
   <div class="row">
     <div class="col-sm-10 my-auto">
+
+
       <h2 class="mb-5">Skills</h2>
+
+
+
+
+
       <p>I love to learn new ways of tackeling problems and enjoy teaching myself new programming languages, frameworks and tools.</p>
       <p>For the past few years I have taught myself a new software framwork or paradigm every year in an effort to keep up with new tools.</p>
       <p>The following are the languages, frameworks and tools I have worked with both professionally and as a student.</p>
@@ -182,15 +216,18 @@ $(document).ready(function(){
         <li class="list-inline-item">
           <i class="devicons devicons-php" data-toggle="tooltip" data-placement="bottom" title="PHP"></i>
         </li>
+
         <li class="list-inline-item">
           <i class="icon-objc" data-toggle="tooltip" data-placement="bottom" title="Objective C"></i>
         </li>
         <li class="list-inline-item">
-
           <i class="icon-javascript" data-toggle="tooltip" data-placement="bottom" title="JavaScript"></i>
         </li>
         <li class="list-inline-item">
           <i class="icon-cplusplus" data-toggle="tooltip" data-placement="bottom" title="C++"></i>
+        </li>
+        <li class="list-inline-item">
+          <i class="devicons devicons-python" data-toggle="tooltip" data-placement="bottom" title="Python"></i>
         </li>
       </ul>
       <div class="subheading mb-3">Frameworks and Tools</div>
@@ -211,6 +248,11 @@ $(document).ready(function(){
           <i class="devicons devicons-wordpress" data-toggle="tooltip" data-placement="bottom" title="Wordpress"></i>
         </li>
         <li class="list-inline-item">
+          <svg class="icon icon-xcode" data-toggle="tooltip" data-placement="bottom" title="Xcode">><use xlink:href="#icon-xcode"></use></svg>
+        </li>
+
+
+        <li class="list-inline-item">
           <i class="devicons devicons-git" data-toggle="tooltip" data-placement="bottom" title="Git"> </i>
         </li>
         <li class="list-inline-item">
@@ -218,9 +260,6 @@ $(document).ready(function(){
         </li>
         <li class="list-inline-item">
           <i class="devicons devicons-apache" data-toggle="tooltip" data-placement="bottom" title="Apache"></i>
-        </li>
-        <li class="list-inline-item">
-          <i class="devicons devicons-composer" data-toggle="tooltip" data-placement="bottom" title="Composer"></i>
         </li>
         <li class="list-inline-item">
           <i class="devicons devicons-heroku" data-toggle="tooltip" data-placement="bottom" title="Heroku"></i>
@@ -258,7 +297,7 @@ $(document).ready(function(){
 
     <div class="row">
       <div class="col-sm-10">
-        <p class="mb-5">When I am not studying, working or changing nappies I love to work on projects. The following is a description of some of them.</p>
+        <p class="mb-5">When I am not studying, working or changing nappies I love to work on hobby projects. The following is a description of some of them.</p>
       </div>
       <div class="col-auto d-none d-md-block">
         <!-- Blank space col -->
@@ -273,13 +312,6 @@ $(document).ready(function(){
             <p>A friend and I set about rectifying this by creating <a href="http://www.uon-myhub-calendar-exporter.com">Uon Myhub Calendar Exporter</a> a service that allows students to extract their class sechedule from the university enrollment service and add it to their calendar.</p>
           <a href="http://www.uon-myhub-calendar-exporter.com" class="btn btn-outline-primary" >Website</a>
           <a href="#" class="btn btn-outline-primary" >Read More</a>
-          <hr>
-          <span>Technologies used:</span><br>
-          <span class="badge badge-secondary">Materialize</span>
-          <span class="badge badge-secondary">jQuery</span>
-          <span class="badge badge-secondary">Java Servlets</span>
-          <span class="badge badge-secondary">Tomcat</span>
-          <span class="badge badge-secondary">Heroku</span>
         </div>
       </div>
       <div class="col-lg-4">
@@ -296,11 +328,7 @@ $(document).ready(function(){
           <p>I had loads of fun building the robot and experimenting with different behaviours</p>
           <a href="https://github.com/sebbeth/SB_RasPiRobotics" class="btn btn-outline-primary" >GitHub Repo <i class="fa fa-github" ></i></a>
           <a href="#" class="btn btn-outline-primary" >Read More</a>
-          <hr>
-          <span>Technologies used:</span><br>
-          <span class="badge badge-secondary">pi4j</span>
-          <span class="badge badge-secondary">Java</span>
-          <span class="badge badge-secondary">Debian</span>
+
         </div>
       </div>
       <div class="col-sm-4">
@@ -314,10 +342,6 @@ $(document).ready(function(){
           <h3 class="mb-4">Aequus Spirit Level iOS App</h3>
           <p>While in High School I built an iPhone App for a school project.</p>
           <p>The app functioned as a spirit level and included features that allowed the angle between multiple surfaces to be compared using some basic trigometry.</p>
-          <hr>
-          <span>Technologies used:</span><br>
-          <span class="badge badge-secondary">Cocoa</span>
-          <span class="badge badge-secondary">Objective C</span>
         </div>
       </div>
       <div class="col-sm-4">
@@ -510,13 +534,12 @@ $(document).ready(function(){
 </section>
 
 
-<section class="footer bg-secondary p-4" style="text-align: center; color:white;">
+<footer class="footer p-4" style="text-align: center; color:white; background-color:#868e96">
 
     <p class="m-4"><i class="fa fa-copyright"></i> Sebastian Brown <span id="copyrightYear"></span></p>
-    <p class="mb-4">Website built using <a href="https://getbootstrap.com/" target="_blank" style="color:white">Bootstrap</a> and templates from the excellent <a href="https://startbootstrap.com/" target="_blank" style="color:white">startbootstrap.com</a></p>
+    <p class="mb-4">Website built using <a href="https://getbootstrap.com/" target="_blank" style="color:white; text-decoration: underline;">Bootstrap</a> and templates from the excellent <a href="https://startbootstrap.com/" target="_blank" style="color:white; text-decoration: underline;">startbootstrap.com</a></p>
     <br>
-    <br>
-</section>
+</footer>
 
 
 </div>
