@@ -71,15 +71,20 @@ $(document).ready(function(){
 
 <style>
 
-<!-- TODO move this to style file
 
 .timeline-mobile-card {
   margin-bottom: 50px;
 }
-</style>
+@media (max-width: 580px) {
+h1,h2 {
 
+  font-size: 16vw;
+}
+.employmentHeading {
+  font-size: 12vw;
+}
+}
 
-<style>
 .icon {
   display: inline-block;
   width: 0.8em;
@@ -149,12 +154,11 @@ color: #0b5dad;
     </div>
   </nav>
 
-
   <div class="container-fluid p-0" style="width:100%">
 
     <section class="resume-section p-3 p-lg-5 d-flex d-column" id="about">
       <div class="my-auto">
-        <h1 class="mb-4 mr-3">Sebastian
+        <h1 class="mb-4 mr-3" style="">Sebastian
           <span class="text-primary">Brown</span>
         </h1>
         <div class="subheading mb-5">Programmer, Student, Freelancer &amp; Dad
@@ -189,8 +193,8 @@ color: #0b5dad;
               </span>
             </a>
           </li>
-        <li>
-        <a href="mailto:me@sebbrown.net" class="mr-3 btn btn-lg btn-primary float-right bg-primary  " style="color:white" >Say Hi</a> <!-- data-toggle="modal" data-target="#contactForm" -->
+        <li class="list-inline-item float-right d-none d-sm-block">
+        <a href="mailto:me@sebbrown.net" class="mr-3 btn btn-lg btn-primary bg-primary  " style="color:white" >Say Hi</a> <!-- data-toggle="modal" data-target="#contactForm" -->
       </li>
     </ul>
   </div>
@@ -353,7 +357,7 @@ color: #0b5dad;
 
 <section class="resume-section p-3 p-lg-5 d-flex flex-column" id="education">
   <div class="my-auto">
-    <h2 class="mb-5">Education &amp; Employment</h2>
+    <h2 class="mb-5 employmentHeading">Education &amp; Employment</h2>
 
     <!-- Mobile Version of Timeline-->
     <div class="d-block d-md-none">
