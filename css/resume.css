@@ -17,7 +17,6 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: 'Helvetica Neue';
   font-weight: 400;
   letter-spacing: 1px;
   font-weight: 700;
@@ -37,7 +36,6 @@ h2 {
 .subheading {
   text-transform: uppercase;
   font-weight: 500;
-  font-family: 'Helvetica Neue';
   font-weight: 400;
   letter-spacing: 1px;
   font-size: 1.35rem;
