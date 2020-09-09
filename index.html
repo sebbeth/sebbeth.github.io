@@ -311,6 +311,20 @@
                 <div class="resume-item row " style="margin-top: 120px;">
                     <div class="col-sm-8  d-flex flex-md-row pb-4">
                         <div class="resume-content mr-auto">
+                            <h3 class="mb-4">GitHub Actions Hackathon</h3>
+                            <p>This year for a bit of fun I submitted a repo to the <a href="https://githubhackathon.com/">GitHub Actions Hackathon</a>. My submission allowes a GitHub Action to send a message to a Microsoft Teams channel.</p>
+                            <p>I built this action to allow releases to Production from my team's repos to be announced in our MS Teams chat. I had fun building this app and recieved a prize pack of GitHub merch for my effort!
+                            </p>
+                            <a href="https://github.com/sebbeth/msteams-action" class="btn btn-outline-primary">GitHub Action <i class="fa fa-github" ></i></a>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <img src="img/hackathon.png" class="rounded float-right w-100" alt="Screenshot of calendar exporter">
+                    </div>
+                </div>
+                <div class="resume-item row " style="margin-top: 120px;">
+                    <div class="col-sm-8  d-flex flex-md-row pb-4">
+                        <div class="resume-content mr-auto">
                             <h3 class="mb-4">UNI TIMETABLE EXPORTER</h3>
                             <p>My university's enrollment service did not offer any timetable export function. </p>
                             <p>This meant that students were forced to either take a screenshot of their class schedule or sign in to the enrollment service to check their class times.</p>
@@ -537,7 +551,6 @@
         <footer class="footer p-4 bg-dark" style="text-align: center; color:white;">
 
             <p class="m-4"><i class="fa fa-copyright"></i> Sebastian Brown <span id="copyrightYear"></span></p>
-            <p class="mb-4">Website built using <a href="https://getbootstrap.com/" target="_blank" style="color:white; text-decoration: underline;">Bootstrap</a> and templates from the excellent <a href="https://startbootstrap.com/" target="_blank" style="color:white; text-decoration: underline;">startbootstrap.com</a></p>
             <br>
         </footer>
 
@@ -583,13 +596,11 @@
 
 
     <script>
-        // Calculates my age and adds to page
-        let string = moment("19951225", "YYYYMMDD").fromNow(true);
-        let age = string.replace("years", "");
-        document.getElementById("ageField").innerHTML = age;
-
         // Get the year
-        document.getElementById("copyrightYear").innerHTML = moment().year();
+        const copyrightyear = document.getElementById("copyrightYear");
+        if (copyrightyear) {
+            document.getElementById("copyrightYear").innerHTML = moment().year();
+        }
     </script>
 
 </body>
