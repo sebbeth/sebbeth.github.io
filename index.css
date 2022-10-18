@@ -1,0 +1,27 @@
+body {
+    background-color: red;
+    display: grid;
+    grid-template-columns: 8rem 1fr;
+}
+
+
+#sidebar {
+    background-color: blue;
+
+    /* Make this a sticky sidebar */
+    position: sticky;
+    height: 100vh;
+    top: 0rem;
+}
+
+#content {
+    height: 1000000rem;
+}
+
+#top-of-site-pixel-anchor {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    top: 500px;
+    left: 0;
+  }
