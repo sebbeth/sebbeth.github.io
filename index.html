@@ -15,13 +15,13 @@
 <body>
     <div id="sidebar">
             <img src="./assets/me_cake.JPG"></img>
-            <a id="about" href="#about">About</a>
-            <a id="skills" href="#skills">Skills</a>
-            <a id="projects" href="#projects">Projects</a>
-            <a id="education" href="#education">Education & Employment</a>
+            <a id="#about" href="#about">About</a>
+            <a id="#skills" href="#skills">Skills</a>
+            <a id="#projects" href="#projects">Projects</a>
+            <a id="#education" href="#education">Education & Employment</a>
     </div>
     <div id="content">
-        <section id="intro">
+        <section id="about">
             <h1> Sebastian <span id="surname">Brown</span></h1>
             <sub>Software Developer</sub>
             <div id="tagline">
@@ -30,16 +30,45 @@
             </div>
             <div id="links">
                 <div>
-                    <a href="mailto:me@sebbrown.net" target="_blank" class="circle-button"><i class="fa-solid fa-envelope"></i></a>
-                    <a href="https://twitter.com/Camper2025" target="_blank" class="circle-button"><i class="fa-brands fa-twitter"></i></a>
-                    <a href="https://github.com/sebbeth" target="_blank" class="circle-button"><i class="fa-brands fa-github"></i></a>
-                    <a href="https://www.linkedin.com/in/sebastian-brown-8a9ab2184/" target="_blank" class="circle-button"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="mailto:me@sebbrown.net"  class="circle-button"><i class="fa-solid fa-envelope"></i></a>
+                    <a href="https://twitter.com/Camper2025"  class="circle-button"><i class="fa-brands fa-twitter"></i></a>
+                    <a href="https://github.com/sebbeth"  class="circle-button"><i class="fa-brands fa-github"></i></a>
+                    <a href="https://www.linkedin.com/in/sebastian-brown-8a9ab2184/"  class="circle-button"><i class="fa-brands fa-linkedin"></i></a>
                 </div>
-                <a href="mailto:me@sebbrown.net" target="_blank" class="button primary">Say Hi</a>
+                <a href="mailto:me@sebbrown.net"  class="button primary">Say Hi</a>
             </div>
         </section>
-        <section>
+        <section id="skills">
             <h2>Skills</h2>
+            <p>I love to learn new ways to tackle problems and enjoy trying out new technologies.</p>
+            <p>These are some of the languages, frameworks and tools I work with.</p>
+        </section>
+        <section id="projects">
+            <h2>Projects</h2>
+            <div class="project">
+                <div>
+
+                    <h3>GitHub Actions Hackathon</h3>
+                    <p>This year for a bit of fun I submitted a repo to the <a href="https://githubhackathon.com/">GitHub Actions Hackathon</a>. My submission allowes a GitHub Action to send a message to a Microsoft Teams channel.</p>
+                    <p>I built this action to allow releases to Production from my team's repos to be announced in our MS Teams chat. I had fun building this app and recieved a prize pack of GitHub merch for my effort!</p>
+                </div>
+                <!-- <img src="assets/hackathon.png"> -->
+            </div>
+            <div class="project">
+                <h3>Uni Timetable Exporter</h3>
+                <p>My university's enrollment service did not offer any timetable export function.</p>
+                <p>This meant that students were forced to either take a screenshot of their class schedule or sign in to the enrollment service to check their class times.</p>
+                <p>A friend and I set about rectifying this by creating <a href="https://uon-myhub-calendar-exporter.herokuapp.com/">Uon Myhub Calendar Exporter</a> a service that allows students to extract their class sechedule from the university enrollment service and add it to their calendar.</p>
+            </div>
+            <div class="project">
+                <h3>Raspberry Pi Robot</h3>
+                <p>I made a robot! Using the chassy of an old remote control car, some servos, and a Raspberry Pi I was able to build an autonomous vehicle that can find it's way around obsticles.</p>
+                <p>Using an ultrasonic rangefinder, the robot is able to determine where obstacles are positioned and how far it is from them. It then tries to drive toward where there are the fewest obsticles.</p>
+                <p>I had loads of fun building the robot and experimenting with different behaviours</p>
+            </div>
+            </section>
+        <section id="education">
+            <h2>Education & Employment</h2>
         </section>
     </div>
     <div id="top-of-site-pixel-anchor"></div>

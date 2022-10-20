@@ -2,7 +2,7 @@
 :root {
     --primary-color: #0b5dad;
     --primary-color-1: #136cc5;
-    --dark-text-color: black;
+    --dark-text-color: #292929;
     --light-text-color: white;
     --light-text-color-deselect: rgba(255,255,255,.5);
 
@@ -10,7 +10,11 @@
     --grey-1: #5c656d;
     --grey-2: #8d97a0;
 
-    --top-offset: 8rem;
+    --top-offset: 17rem;
+}
+
+html {
+    scroll-behavior: smooth;
 }
 
 body {
@@ -18,12 +22,19 @@ body {
     margin: 0px;
     background-color: var(--background-color);
     display: grid;
+    color: var(--dark-text-color);
     grid-template-columns: auto 1fr;
 }
 
 h1 {
     font-size: 5rem;
     margin-bottom: 1rem;
+    text-transform: uppercase;
+}
+
+
+h2 {
+    font-size: 3.5rem;
     text-transform: uppercase;
 }
 
@@ -45,7 +56,6 @@ sub {
     flex-direction: column;
     gap: 1rem;
     padding: 1.5rem;
-    padding-top: var(--top-offset);
 }
 
 /* Sidebar */
@@ -58,14 +68,15 @@ sub {
 }
 
 #sidebar > img {
-    width: 8rem;
+    width: 9rem;
     border: 0.5rem solid #ffffff33;
     border-radius: 50%;
+    margin-top: calc(var(--top-offset) + 2.5rem);
     /* width: 80%; */
 }
 
 #sidebar > a:hover {
-    color: rgb(218, 218, 218);
+    color: var(--light-text-color)
 }
 
 
@@ -77,35 +88,36 @@ sub {
 
 
 
-#intro > h1 {
+#about > h1 {
     margin-top: var(--top-offset);
 }
 
-#intro > #tagline {
+#about > #tagline {
     margin-top: 3rem;
     margin-bottom: 2rem;
 }
 
 
 
-#intro > #links {
+#about > #links {
     display: flex;
     justify-content: space-between;
     align-items: center;
     width: 100%;
 }
 
-#intro > #links > div {
+#about > #links > div {
     display: flex;
-    gap: 0.5rem;
+    gap: 1rem;
     text-align: center;
     line-height: 2rem;
 }
 
 section {
     min-height: 100vh;
-    max-width: fit-content;
+    max-width: 100%;
     padding: 2rem;
+    border-bottom: 1px solid #dee2e6;
 }
 
 #surname {
@@ -157,4 +169,11 @@ section {
 
 .circle-button:hover {
     background-color: var(--primary-color);
+}
+
+/* Project */
+
+#projects > .project {
+    display: grid;
+    grid-template-columns: 66% 33%;
 }
