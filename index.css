@@ -38,6 +38,11 @@ h2 {
     text-transform: uppercase;
 }
 
+h3 {
+    font-size: 1.5rem;
+    text-transform: uppercase;
+}
+
 sub {
     font-size: 1.5rem;
     color: var(--grey-1);
@@ -71,12 +76,18 @@ sub {
     width: 9rem;
     border: 0.5rem solid #ffffff33;
     border-radius: 50%;
-    margin-top: calc(var(--top-offset) + 2.5rem);
+    margin-top: calc(var(--top-offset) + 0rem);
     /* width: 80%; */
 }
 
 #sidebar > a:hover {
     color: var(--light-text-color)
+}
+
+@media screen and (max-width: 750px) {
+    #sidebar {
+        display: none;
+    }
 }
 
 
@@ -137,23 +148,33 @@ section {
 
 .button {
     border-radius: 4px;
-    padding: 0.6rem 1rem;
     text-align: center;
-    font-size: 1.25rem;
-    /* height: 1.5rem; */
+    padding: 0.375rem 0.75rem;
+    font-size: 1rem;
     text-decoration: none;
     white-space: nowrap;
     vertical-align: middle;
     cursor: pointer;
+    transition: ease-in-out 0.15s;
 }
 
-.button.primary {
+.button.filled {
     background-color: var(--primary-color);
     color: var(--light-text-color);
 }
 
-.button.primary:hover {
+.button.filled:hover {
     background-color: var(--primary-color-1);
+}
+
+.button.outline {
+    border: 1px solid var(--primary-color);
+    color: var(--primary-color);
+}
+
+.button.outline:hover {
+    background-color: var(--primary-color-1);
+    color: var(--light-text-color);
 }
 
 .circle-button {
@@ -173,7 +194,32 @@ section {
 
 /* Project */
 
+#projects {
+    display: grid;
+    gap: 10rem;
+}
+
 #projects > .project {
     display: grid;
-    grid-template-columns: 66% 33%;
+    align-items: center;
+}
+
+@media screen and (min-width: 900px) {
+    #projects > .project {
+        grid-template-columns: 60% 40%;
+        grid-template-rows: auto;
+        gap: 1rem;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    #projects > .project {
+        grid-template-columns: 100%;
+        grid-template-rows: auto auto;
+        gap: 2rem;
+    }
+}
+
+#projects > .project > img {
+    width: 100%;
 }
