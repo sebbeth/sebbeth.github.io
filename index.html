@@ -10,6 +10,10 @@
     <link href="assets/fontawesome/css/brands.css" rel="stylesheet" />
     <link href="assets/fontawesome/css/solid.css" rel="stylesheet" />
     <link rel="stylesheet" href="index.css" />
+    <!-- <link
+      href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible&display=swap"
+      rel="stylesheet"
+    /> -->
     <title>Sebastian Brown</title>
   </head>
   <body>
@@ -19,10 +23,13 @@
       <a id="#skills" href="#skills">Skills</a>
       <a id="#projects" href="#projects">Projects</a>
       <a id="#education" href="#education">Education & Employment</a>
+      <a id="colourMode"><i class="fa-brands fa-linkedin"></i></a>
     </div>
     <div id="content">
       <section id="about">
-        <h1>Sebastian <span id="surname">Brown</span></h1>
+        <h1>
+          Sebastian <span id="surname" onclick="onSwitchColor()">Brown</span>
+        </h1>
         <sub>Software Developer</sub>
         <div id="tagline">
           <p>👋 I am a Software Developer living in Newcastle Australia.</p>
@@ -61,7 +68,7 @@
       <section id="projects">
         <h2>Projects</h2>
         <div class="project">
-          <div style="height: fit-content">
+          <div class="project-content">
             <h3>GitHub Actions Hackathon</h3>
             <p>
               This year for a bit of fun I submitted a repo to the
@@ -74,12 +81,18 @@
               repos to be announced in our MS Teams chat. I had fun building
               this app and recieved a prize pack of GitHub merch for my effort!
             </p>
-            <a href="https://github.com/sebbeth/msteams-action" class="button outline">GitHub Action <i class="fa-brands fa-github"></i></a>
+            <p>
+              <a
+                href="https://github.com/sebbeth/msteams-action"
+                class="button outline"
+                >GitHub Action <i class="fa-brands fa-github"></i
+              ></a>
+            </p>
           </div>
-            <img src="assets/hackathon.png">
+          <img src="assets/hackathon.png" />
         </div>
         <div class="project">
-          <div>
+          <div class="project-content">
             <h3>Uni Timetable Exporter</h3>
             <p>
               My university's enrollment service did not offer any timetable
@@ -99,12 +112,18 @@
               from the university enrollment service and add it to their
               calendar.
             </p>
-            <a href="https://uon-myhub-calendar-exporter.herokuapp.com/" class="button outline">Website</a>
+            <p>
+              <a
+                href="https://uon-myhub-calendar-exporter.herokuapp.com/"
+                class="button outline"
+                >Website</a
+              >
+            </p>
           </div>
-          <img src="assets/exporter.jpg">
+          <img src="assets/exporter.jpg" />
         </div>
         <div class="project">
-          <div>
+          <div class="project-content">
             <h3>Raspberry Pi Robot</h3>
             <p>
               I made a robot! Using the chassy of an old remote control car,
@@ -120,9 +139,15 @@
               I had loads of fun building the robot and experimenting with
               different behaviours
             </p>
-            <a href="https://github.com/sebbeth/SB_RasPiRobotics" class="button outline">GitHub Repo <i class="fa-brands fa-github"></i></a>
+            <p>
+              <a
+                href="https://github.com/sebbeth/SB_RasPiRobotics"
+                class="button outline"
+                >GitHub Repo <i class="fa-brands fa-github"></i
+              ></a>
+            </p>
           </div>
-          <img src="assets/robot.png">
+          <img src="assets/robot.png" />
         </div>
       </section>
       <section id="education">
