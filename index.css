@@ -51,6 +51,11 @@ h3 {
   text-transform: uppercase;
 }
 
+h4,
+h5 {
+  margin: 0;
+}
+
 sub {
   font-size: 1.5rem;
   color: var(--grey-1);
