@@ -38,7 +38,7 @@ createObserver(
     currentItem = "about";
     updateNav();
   },
-  () => {}
+  () => { }
 );
 createObserver(
   "#skills",
@@ -46,7 +46,7 @@ createObserver(
     currentItem = "skills";
     updateNav();
   },
-  () => {}
+  () => { }
 );
 
 
@@ -64,7 +64,7 @@ colorOptions = [
   "indigo",
   "chartreuse",
   "aquamarine",
-  
+
 ];
 
 function onSwitchColor() {
@@ -77,6 +77,11 @@ function onSwitchColor() {
   applyColor(newColor);
 }
 
+function resetColor() {
+  currentColor = "";
+  applyColor(currentColor);
+}
+
 function applyColor(color) {
   console.log("color is ", color);
   const root = document.documentElement;
@@ -84,7 +89,12 @@ function applyColor(color) {
   root.style.setProperty('--primary-color', color);
   // change the surname to the color
   const surname = document.querySelector("#surname");
-  surname.textContent = color;
+  surname.textContent = color ? color : "brown";
+
+  // set visiblity of the reset button
+  const showResetButton = color !== "";
+  const resetButton = document.querySelector("#resetColours");
+  resetButton.style.setProperty('visibility', showResetButton ? 'initial' : 'hidden');
 
 }
 

@@ -30,6 +30,11 @@ body {
   grid-template-columns: auto 1fr;
 }
 
+.clickable {
+  cursor: pointer;
+  user-select: none;
+}
+
 h1 {
   font-size: 5rem;
   margin-bottom: 1rem;
@@ -108,10 +113,6 @@ a:hover {
 
 /* Content */
 
-#content {
-  height: 1000000rem;
-}
-
 #about {
   width: fit-content;
 }
@@ -152,6 +153,20 @@ section {
   transition: color 1s ease;
 }
 
+.trophy {
+  color: #ebc600;
+}
+
+#resetColours {
+  position: fixed;
+  top: 1rem;
+  right: 1rem;
+  display: flex;
+  color: var(--primary-color);
+  gap: 0.5rem;
+  align-items: center;
+}
+
 #top-of-site-pixel-anchor {
   position: absolute;
   width: 1px;
@@ -172,6 +187,7 @@ section {
   white-space: nowrap;
   vertical-align: middle;
   cursor: pointer;
+  transition: color 1s ease;
   transition: ease-in-out 0.15s;
 }
 
@@ -186,7 +202,7 @@ section {
 }
 
 .button.filled:hover {
-  background-color: var(--primary-color-1);
+  background-color: var(--primary-color);
 }
 
 .button.outline {
@@ -195,7 +211,7 @@ section {
 }
 
 .button.outline:hover {
-  background-color: var(--primary-color-1);
+  background-color: var(--primary-color);
   color: var(--light-text-color);
 }
 

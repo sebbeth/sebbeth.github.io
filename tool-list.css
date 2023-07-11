@@ -1,0 +1,7 @@
+.toolList {
+  display: flex;
+  list-style-type: none;
+  gap: 1rem;
+  font-size: 2.8rem;
+  padding-left: 0rem;
+}
