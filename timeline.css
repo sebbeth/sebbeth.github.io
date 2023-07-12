@@ -36,6 +36,7 @@
 .timeline > li > .timeline-panel {
   width: calc(50% - 2.5rem);
   float: left;
+  min-height: 5rem;
   border: 1px solid #d4d4d4;
   border-radius: 2px;
   padding: 20px;

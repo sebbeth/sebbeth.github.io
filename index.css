@@ -1,7 +1,7 @@
 :root {
   --primary-color: #0b5dad;
   --primary-color-1: #136cc5;
-  --dark-text-color: #292929;
+  --dark-text-color: #343a40;
   --light-text-color: white;
   --light-text-color-deselect: rgba(255, 255, 255, 0.5);
 
@@ -48,6 +48,7 @@ h2 {
 
 h3 {
   font-size: 1.5rem;
+  font-weight: 700;
   text-transform: uppercase;
 }
 
@@ -103,6 +104,9 @@ a:hover {
 }
 
 #sidebar > a:hover {
+  color: var(--light-text-color);
+}
+#sidebar > .active {
   color: var(--light-text-color);
 }
 
