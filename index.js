@@ -13,10 +13,8 @@ function createObserver(querySelector, atTop, notAtTop) {
   ) {
     let observer = new IntersectionObserver((entries) => {
       if (entries[0].boundingClientRect.y < 0) {
-        console.log("not at top", querySelector);
         notAtTop();
       } else {
-        console.log("at top", querySelector);
         atTop();
       }
     });
@@ -89,7 +87,6 @@ function applyColor(colorName) {
     colorName === ""
       ? colorOptions.find((color) => color.name === "blue")
       : colorOptions.find((color) => color.name === colorName);
-  console.log("color is ", color);
   const root = document.documentElement;
   // set the primary color
   root.style.setProperty("--primary-color", color.color);
